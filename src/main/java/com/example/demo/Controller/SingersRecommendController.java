@@ -14,18 +14,15 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping("/api/singersRecommendController")
 public class SingersRecommendController {
-    @Autowired
-    private SingersRepository SingersRepository;
-    @Autowired
-    private SingersRecommendRepository SingersRecommendRepository;
+
     @Autowired
     private SingersRepository singersRepository;
     @Autowired
     private SingersRecommendRepository singersRecommendRepository;
 
     public SingersRecommendController(SingersRepository singersRepository, SingersRecommendRepository singersRecommendRepository) {
-        this.SingersRepository = singersRepository;
-        this.SingersRecommendRepository = singersRecommendRepository;
+        this.singersRepository = singersRepository;
+        this.singersRecommendRepository = singersRecommendRepository;
 
     }
 
